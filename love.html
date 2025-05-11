@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Test Challenge</title>
+  <link rel="stylesheet" href="lv.css" />
+
+</head>
+<body>
+
+  <h1 class="mainHeading">LOVE DOVE 🕊️</h1>
+  
+
+  <!-- Intro Envelope Screen -->
+  <div id="introScreen" class="screen" style="display: flex;">
+    <div class="box">
+      <p>HI 🥰</p>
+      <p>Let's test your love Buddy!</p>
+      <button id="startBtn">Challenge Accepted</button>
+    </div>
+  </div>
+
+  <!-- Cloud Transition (invisible) -->
+  <div id="cloudsContainer"></div>
+
+  <!-- Black Bows Screen -->
+  <div id="bowsScreen" class="screen">
+    <h2>Welcome ❤️</h2>
+    <div class="teddyBear"></div>
+
+    <button id="beginQuizBtn">TO AAIYE SHURU KRTE HAIN!</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quizScreen" class="screen">
+    <div class="questionBox" id="questionBox">
+      <h3 id="questionText"></h3>
+      <div id="options"></div>
+      <p id="feedback" style="margin-top: 10px;"></p>
+    </div>
+  </div>
+
+  <!-- Final Result Screen -->
+  <div id="resultScreen" class="screen">
+    <h2>🎉 Congratulations! 🎉</h2>
+    <p id="scoreMessage"></p>
+    <div class="cartoonDance"></div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="lvscript.js"></script>
+
+</body>
+</html>

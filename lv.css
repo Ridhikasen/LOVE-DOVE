@@ -1,0 +1,176 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4c2c2;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('https://cdn.pixabay.com/photo/2021/07/24/07/03/rainbow-6488833_1280.png');
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+
+.mainHeading {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 15px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+    .screen {
+      display: none;
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #introScreen, #bowsScreen, #quizScreen, #resultScreen {
+      display: flex;
+    }
+
+    #introScreen .box, .questionBox {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
+    }
+
+    .cloud {
+      position: absolute;
+      top: 30%;
+      width: 150px;
+      height: 100px;
+      background-color: white;
+      border-radius: 50%;
+      animation: cloudMove 2s linear forwards;
+      opacity: 0.8;
+    }
+
+    @keyframes cloudMove {
+      0% { left: -150px; }
+      100% { left: 100%; }
+    }
+
+    #bowsScreen h2 {
+      color: black;
+    }
+
+    #bowsScreen button {
+      background-color: black;
+      color: white;
+    }
+    
+    .teddyBear {
+  width: 150px;
+  height: 150px;
+  background-image: url('https://i.gifer.com/Paw.gif'); 
+  background-size: cover;
+  margin: 20px auto;
+  animation: bounceIn 1.2s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5) translateY(-200px);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1) translateY(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(15deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
+    .questionBox {
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 400px;
+    }
+
+    .answerBtn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #ffb6c1;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .answerBtn.correct {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .answerBtn.wrong {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .cartoonDance {
+      width: 300px;
+      height: 300px;
+      background-image: url('https://i.gifer.com/iJb.gif'); /* Cute teddy bear gif */ 
+      background-size: cover;
+      margin-top: 20px;
+      
+    }
+
+    #questionText {
+      margin-bottom: 10px;
+    }
+
+    
+   
